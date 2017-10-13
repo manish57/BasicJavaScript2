@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<title>JavaScript Assignment</title>
+</head>
+<body>
+
+	<div class="container">			  
+		<ul class="nav nav-tabs">
+			<li><a data-toggle="tab" href="#assignment1">Problem-1</a></li>
+			<li><a data-toggle="tab" href="#assignment2">Problem-2</a></li>
+			<li><a data-toggle="tab" href="#assignment3">Problem-3</a></li>
+			<li><a data-toggle="tab" href="#assignment4">Problem-4</a></li>
+			<li><a data-toggle="tab" href="#assignment5">Problem-5</a></li>
+			<li><a data-toggle="tab" href="#assignment6">Problem-6</a></li>
+		</ul>
+			  
+		<div class="tab-content">
+			<!-- First Assignment -->
+			<div id="assignment1" class="tab-pane fade in active">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="listData">Enter Value: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="listData">
+						</div>
+					</div>
+
+					<div class="mid1">
+						<button type="button" class="btn btn-primary btn-lg" onclick="a1()">Add</button><br>
+						<h1 id="sol1"></h1>
+					</div>
+				</form>
+			</div>
+
+			<!-- Second Assignment -->
+			<div id="assignment2" class="tab-pane fade">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valA">NUMBER 1: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valA" placeholder="Enter number 1">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valB">NUMBER 2: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valB" placeholder="Enter number 2">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valC">ANSWER: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valC">
+						</div>
+					</div>
+
+					<div class="mid1">
+						<button type="button" class="btn btn-primary btn-lg" onclick="add()">Add</button>
+						<button type="button" class="btn btn-primary btn-lg" onclick="sub()">Sub</button>
+						<button type="button" class="btn btn-primary btn-lg" onclick="mul()">Mul</button>
+						<button type="button" class="btn btn-primary btn-lg" onclick="div()">Div</button><br>
+						<h1 id="sol2"></h1>
+					</div>
+				</form>
+			</div>
+
+			<!-- Third Assignment -->
+			<div id="assignment3" class="tab-pane fade">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valD">Employee no: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valD" placeholder="Enter no">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valE">Name: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valE" placeholder="Enter name">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valF">Gender: </label>
+						<div class="col-sm-4">
+							<label class="radio-inline">
+						      <input type="radio" name="gender" id="male">Male
+						    </label>
+						    <label class="radio-inline">
+						      <input type="radio" name="gender" id="female">Female
+						    </label>
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valG">Dept: </label>
+						<div class="col-sm-4">
+					    	<select class="form-control" id="valG">
+					        	<option>ACCT</option>
+					        	<option>PROD</option>
+					        	<option>EDP</option>
+					        	<option>MKTG</option>
+					      	</select>
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valH">Owns Vehicle: </label>
+						<div class="col-sm-4">							      
+							<input type="checkbox" value="" id="own">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valH">Basic: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valH" placeholder="Enter Basic Salary">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valI">DA %: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valI" placeholder="Enter DA">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valJ">HRA %: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valJ" placeholder="Enter HRA">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valK">PF %: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valK" placeholder="Enter PF">
+						</div>
+					</div>
+
+					<div class="mid1">
+						<button type="button" class="btn btn-primary btn-lg" onclick="a3()">Calculate</button><br>
+					</div>
+				</form>
+
+				<div id="res-box">
+					<h3 id="sol3"></h3>
+				</div>
+			</div>
+
+			<!-- Fourth Assignment -->
+			<div id="assignment4" class="tab-pane fade">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valL">Student Name: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valL" placeholder="Enter name">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valM">Marks 1: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valM" placeholder="Enter marks 1">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valN">Marks 2: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valN" placeholder="Enter marks 2">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valO">Marks 3: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valO" placeholder="Enter marks 3">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valP">Total: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valP">
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-3 control-label" for="valQ">Percentage: </label>
+						<div class="col-sm-4">
+							<input class="form-control" type="text" id="valQ">
+						</div>
+					</div>
+
+					<div class="mid1">
+						<button type="button" class="btn btn-primary btn-lg" onclick="a4()">Show Result</button><br>
+						<h1>Result: </h1><h1 id="sol4a"></h1>
+						<h1>Grade: </h1><h1 id="sol4b"></h1>
+					</div>
+				</form>
+			</div>
+
+			<!-- Fifth Assignment -->
+			<div id="assignment5" class="tab-pane fade">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<h2 id="main-heading">This text is <span id="direction">left</span> aligned!!!</h2>
+					</div>
+
+					<button type="button" class="btn btn-primary btn-lg" onclick="left()">Left</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="center()">Center</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="right()">Right</button><br>
+
+					<div class="form-group form-group-lg">
+						<div class="col-sm-4">
+							<label class="radio-inline">
+						      <input type="radio" name="color" onclick="red()">Red
+						    </label>
+						    <label class="radio-inline">
+						      <input type="radio" name="color" onclick="green()">Green
+						    </label>
+						    <label class="radio-inline">
+						      <input type="radio" name="color" onclick="blue()">Blue
+						    </label>
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<label class="col-sm-1 control-label" for="valA">Size: </label>
+						<div class="col-sm-4">
+					    	<select size = "7" class="form-control" id="sel1">
+					        	<option onclick= "document.getElementById('main-heading').style.fontSize = '10px'">10</option>
+					        	<option onclick= "document.getElementById('main-heading').style.fontSize = '20px'">20</option>
+					        	<option onclick= "document.getElementById('main-heading').style.fontSize = '30px'">30</option>
+					        	<option onclick= "document.getElementById('main-heading').style.fontSize = '40px'">40</option>
+					        	<option onclick= "document.getElementById('main-heading').style.fontSize = '50px'">50</option>
+					      	</select>
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg">
+						<div class="col-sm-4">							      
+							<input type="checkbox" id="c1" value="" onclick="checkbox()"> Bold
+							<input type="checkbox" id="c2" value="" onclick="checkbox()"> Italic
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Sixth Assignment -->
+			<div id="assignment6" class="tab-pane fade">
+				<form class="form-horizontal well">
+					<div class="form-group form-group-lg">
+						<p id="para-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+
+					<div class="mid1 mid-bottom">
+						<button type="button" id="start" class="btn btn-primary btn-lg" onclick="start1()">START</button>
+						<button type="button" id="stop" class="btn btn-danger btn-lg" onclick="stop1()">STOP</button>
+						<button type="button" id="reset" class="btn btn-success btn-lg" onclick="reset1()">RESET</button>
+						<div class="form-group form-group-lg">
+							<div class="col-sm-4">							      
+								<input type="checkbox" id="horizontal" onclick="horizontal1()"> Move Horizontal
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<footer> <!-- FOOTER SECTION -->             
+	        <div class="container">
+	          <p>Copyright &copy; 2017 by Manish Chaudhari. All rights reserved.</p>
+			</div>            
+	</footer> <!-- FOOTER SECTION END-->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
